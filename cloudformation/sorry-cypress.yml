@@ -410,7 +410,7 @@ Resources:
               Value: sorry-cypress
           Name: mongo
 
-        - Image: docker.io/agoldis/sorry-cypress-director
+        - Image: hub.docker.com/r/agoldis/sorry-cypress-director
           Essential: true
           PortMappings:
             - ContainerPort: 1234
@@ -440,7 +440,7 @@ Resources:
               Condition: START
           Name: director
 
-        - Image: docker.io/agoldis/sorry-cypress-api
+        - Image: hub.docker.com/r/agoldis/sorry-cypress-api
           PortMappings:
             - ContainerPort: 4000
           LogConfiguration:
@@ -459,7 +459,7 @@ Resources:
               Condition: START
           Name: api
 
-        - Image: docker.io/agoldis/sorry-cypress-dashboard
+        - Image: hub.docker.com/r/agoldis/sorry-cypress-dashboard
           PortMappings:
             - ContainerPort: 8080
           LogConfiguration:
